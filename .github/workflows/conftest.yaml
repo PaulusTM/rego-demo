@@ -20,4 +20,5 @@ jobs:
           mv conftest /tmp
       - name: validate
         run: |
-          /tmp/conftest verify policy
+          #/tmp/conftest verify policy
+          ls -alth
