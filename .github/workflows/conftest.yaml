@@ -20,6 +20,10 @@ jobs:
           mkdir -p $HOME/.local/bin
           mv conftest $HOME/.local/bin
           echo "$HOME/.local/bin" >> $GITHUB_PATH
+
+      - name: checkout code
+        uses: actions/checkout@v2
+
       - name: validate
         run: |
           pwd
